@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <img id="logo" src="img/Logo.png" >
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <textarea id="palabra" placeholder="Ingrese un texto"></textarea>
+            </td>
+            <td>
+                <div id="cuadrado">
+                    <div id="noText">
+                        <img id="muñeco" src="img/Muñeco.png">
+                        <div id="texto"></div>
+                        <div id="texto2"></div>
+                    </div>
+                    <br>
+                    <textarea onblur="rest();" id="resultado" placeholder="Resultado texto encriptado"></textarea>
+                    <input id="copiar" type="submit" value="Copiar" onclick="copiar()">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div id="botones">
+                    <input id="encrip" type="submit" value="Encriptar" onclick="encriptar()">
+                    <input id="desecrip" type="submit" value="Desencriptar" onclick="desencriptar()">
+                </div>
+            </td>
+        </tr>
+    </table>
+    <script src="encriptador.js"></script>
+</body>
+</html>
